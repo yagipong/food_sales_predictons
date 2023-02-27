@@ -39,6 +39,15 @@ Model
 
 The final model was a regression between the most relevant features and the item sales. The most important metric from this regression was the R^2 value for both the training data and the testing data. Both the training data and testing data featured an R^2 value around .56, indicating that the model was well balanced but only accounted for some of the variation betwen the variables. Therefore, the identified features are only moderately useful predicting sales.
 
+![random_forest_importances](https://user-images.githubusercontent.com/105327648/221492422-5182b6c7-ea59-4b04-9684-4341ba170125.png)
+
+The importances derived from a Random Forest Regression demonstrate that Item_MRP was by far the most important feature in the model.
+
+
+![lin_reg_coeffs](https://user-images.githubusercontent.com/105327648/221492609-0c6efe92-53bd-4c3f-90b7-20f9d56c9928.png)
+
+As these coefficients are not scaled, the coefficient with the largest positive impact on food sales was the outlet establishment year. The other most impactful features negatively impacted food sales.
+
 Recommendations:
 
 The most important recommendation is to find variables that can better predict sales. The current slate of variables only provides moderate predictive capability, which is not very useful in a business setting.
