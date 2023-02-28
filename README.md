@@ -48,6 +48,12 @@ The importances derived from a Random Forest Regression demonstrate that Item_MR
 
 As these coefficients are not scaled, the coefficient with the largest positive impact on food sales was the outlet establishment year. The other most impactful features negatively impacted food sales.
 
+![bar](https://user-images.githubusercontent.com/105327648/221834184-d5a31912-03d4-4317-8706-5eb26a9689f4.png)
+
+![dot](https://user-images.githubusercontent.com/105327648/221834225-ee87a065-4cee-44bc-9f26-78eaff70631a.png)
+
+The Shap plots reinforce the conclusion from the importances graph, namely that Item_MRP is the most important predictive feature for this model.
+
 Recommendations:
 
 The most important recommendation is to find variables that can better predict sales. The current slate of variables only provides moderate predictive capability, which is not very useful in a business setting.
