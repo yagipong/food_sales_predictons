@@ -54,14 +54,19 @@ As these coefficients are not scaled, the coefficient with the largest positive 
 
 The Shap plots reinforce the conclusion from the importances graph, namely that Item_MRP is the most important predictive feature for this model.
 
+The following local explanations demonstrate how explanations for specific data points may both reinforce and differ from the global explanations.
+
 ![Force plot 1](https://user-images.githubusercontent.com/105327648/222247226-f9c75589-e748-4eb6-9df1-85dcfa4f35ac.png)
 
 ![Lime 1](https://user-images.githubusercontent.com/105327648/222247229-6c11ea6e-23a5-4d17-a88d-4e9da9f100f3.png)
+
+For the above instance, we can see from the local explanations that Item MRP and Outlet_Type_Grocery Store have a strong effect on the instance. This corresponds with what was observed in the global explanations.
 
 ![force plot](https://user-images.githubusercontent.com/105327648/222247290-17733dce-53dd-49aa-a980-48f30f2c299c.png)
 
 ![Lime](https://user-images.githubusercontent.com/105327648/222247322-0514a912-220f-4596-bbaa-69d2d70249ab.png)
 
+For the above instance, we can see that features other the Item MRP and Outlet Type impact the local explaantion. While the top two remain Iteam MRP and Outlet Type, other features related to the outlet type and item type factor into the prediction for this instance.
 
 Recommendations:
 
